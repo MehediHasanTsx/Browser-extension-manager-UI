@@ -8,6 +8,7 @@ The goal of this project was to closely match the provided design while building
 ## 🚀 Features
 
 Users can:
+
 - Toggle extensions between **active** and **inactive** states
 - Filter extensions by status (Active / Inactive)
 - Remove extensions from the list
@@ -43,6 +44,7 @@ Users can:
 ## 💡 Enhancements & Ideas
 
 Optional improvements explored or planned:
+
 - Confirmation modal before removing an extension
 - Smooth animations and transitions for UI interactions
 - Improved accessibility states
