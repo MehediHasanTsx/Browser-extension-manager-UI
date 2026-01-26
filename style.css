@@ -15,7 +15,7 @@
     --bg-gradient: linear-gradient(180deg, #040918 0%, #091540 100%);
     --bg-color: var(--neutral-0);
     --text-color: var(--neutral-900);
-    --background-color: #1F2535;
+    --background-color: var(--neutral-800);
 }
 
 * {
@@ -39,6 +39,16 @@ body {
     font-family: 'Noto Sans', sans-serif;
     background: var(--bg-gradient);
     color: var(--text-color);
+    color: var(--neutral-0);
+}
+
+p{
+    color: var(--neutral-300);
+}
+
+.logo{
+    color: var(--neutral-0);
+    fill: var(--neutral-0);
 }
 
 .main_container {
@@ -129,7 +139,8 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 16px;
+    padding: 24px;
+    border: 1px solid var(--neutral-600);
 }
 
 .extension_card_top_content {
