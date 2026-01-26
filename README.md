@@ -1,4 +1,5 @@
 # Browser Extension Manager UI
+Live link: https://mh-browser-extension-manager-ui.vercel.app/
 
 This project is a responsive and interactive **Browser Extension Manager UI** built using **HTML, CSS, and vanilla JavaScript**.  
 It is based on a Frontend Mentor challenge and focuses on dynamic data handling, UI state management, filtering, and theming.
