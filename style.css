@@ -29,10 +29,6 @@
     src: url('/browser-extensions-manager-ui-main/assets/fonts/NotoSans-VariableFont_wdth,wght.ttf');
 }
 
-body.dark-mode {
-    background: var(--dark-bg-gradient) no-repeat center center fixed;
-    --text-color: var(--neutral-900);
-}
 
 
 body {
@@ -41,6 +37,12 @@ body {
     font-family: 'Noto Sans', sans-serif;
     background: var(--dark-bg-gradient) no-repeat center center fixed;
     color: var(--text-color);
+}
+
+
+body.light-mode {
+    background: var(--light-bg-gradient) no-repeat center center fixed;
+    --text-color: var(--neutral-0);
 }
 
 p {
@@ -80,7 +82,8 @@ p {
     height: 36px;
 }
 
-.header_right {
+
+#theme_toggle {
     height: 36px;
     width: 36px;
     display: flex;
@@ -93,7 +96,7 @@ p {
     cursor: pointer;
 }
 
-.header_right img {
+#theme_toggle img {
     width: 24px;
     height: 24px;
 }

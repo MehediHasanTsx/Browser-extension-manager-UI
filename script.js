@@ -1,3 +1,8 @@
+// theme toggle button
+document.getElementById("theme_toggle").addEventListener("click", () => {
+    document.body.classList.toggle("light-mode");
+});
+
 // Remove Buttons Functions
 function rmvDevLens() {
     document.getElementById("DevLens").dataset.removed = "true";
@@ -117,3 +122,16 @@ buttons.forEach(button => {
 });
 
 
+// auto change active/inactive button based on extension status change after .5sec
+document.querySelectorAll(".status").forEach(checkbox => {
+    checkbox.addEventListener("change", () => {
+        setTimeout(() => {
+            const activeButton = document.querySelector(".btn.active").id;
+            if (activeButton === "showActive") {
+                document.getElementById("showActive").click();
+            } else if (activeButton === "showInactive") {
+                document.getElementById("showInactive").click();
+            }
+        }, 500);
+    });
+});
