@@ -1,4 +1,4 @@
-# Frontend Mentor - Browser extensions manager UI solution
+<!-- # Frontend Mentor - Browser extensions manager UI solution
 
 This is a solution to the [Browser extensions manager UI challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/browser-extension-manager-ui-yNZnOfsMAp). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
@@ -117,7 +117,6 @@ This is where you can give a hat tip to anyone who helped you out on this projec
 **Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
 
 ## Submitting your solution
-
 Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
 
 Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
@@ -200,4 +199,4 @@ Remove
 
 ConsolePlus
 Enhanced developer console with advanced filtering and logging.
-Remove
+Remove -->

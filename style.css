@@ -1,5 +1,5 @@
 :root {
-    --neutral-900: hsl(227, 75%, 14%);
+    --neutral-900: hsl(226, 75%, 14%);
     --neutral-800: hsl(226, 25%, 17%);
     --neutral-700: hsl(225, 23%, 24%);
     --neutral-600: hsl(226, 11%, 37%);
@@ -26,7 +26,7 @@
 
 @font-face {
     font-family: 'Noto Sans';
-    src: url('/browser-extensions-manager-ui-main/assets/fonts/NotoSans-VariableFont_wdth,wght.ttf');
+    src: url('../assets/fonts/NotoSans-VariableFont_wdth,wght.ttf');
 }
 
 
@@ -48,6 +48,10 @@ body.light-mode {
 p {
     color: var(--neutral-300);
     line-height: 130%;
+}
+
+body.light-mode p {
+    color: var(--neutral-600);
 }
 
 .main_container {
@@ -73,10 +77,12 @@ p {
     justify-content: space-between;
     align-items: center;
     padding: 12px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0);
 }
 
 body.light-mode .header {
     background-color: var(--neutral-0);
+    box-shadow: 0 0 10px var(--neutral-200);
 }
 
 .header_left {
@@ -85,6 +91,22 @@ body.light-mode .header {
     align-items: center;
     gap: 16px;
     height: 36px;
+}
+
+.dark_logo {
+    display: block;
+}
+
+.light_logo {
+    display: none;
+}
+
+body.light-mode .dark_logo {
+    display: none;
+}
+
+body.light-mode .light_logo {
+    display: block;
 }
 
 
@@ -101,14 +123,38 @@ body.light-mode .header {
     cursor: pointer;
 }
 
+body.light-mode #theme_toggle {
+    background-color: var(--neutral-100);
+}
+
 #theme_toggle:hover {
     background-color: var(--neutral-600);
+}
+
+body.light-mode #theme_toggle:hover {
+    background-color: var(--neutral-300);
 }
 
 
 #theme_toggle img {
     width: 24px;
     height: 24px;
+}
+
+.dark_icon {
+    display: block;
+}
+
+.light_icon {
+    display: none;
+}
+
+body.light-mode .dark_icon {
+    display: none;
+}
+
+body.light-mode .light_icon {
+    display: block;
 }
 
 .main_content_wrapper {
@@ -146,6 +192,23 @@ body.light-mode .header {
     color: var(--neutral-900);
 }
 
+
+body.light-mode .btn {
+    background-color: var(--neutral-0);
+    color: var(--neutral-800);
+    border: 0.5px solid var(--neutral-300);
+}
+
+body.light-mode .btn:hover {
+    color: var(--neutral-600);
+}
+
+body.light-mode .btn.active {
+    background-color: var(--red-700);
+    color: var(--neutral-0);
+    border: 0.5px solid var(--neutral-300);
+}
+
 .button_wrapper {
     display: flex;
     flex-direction: row;
@@ -154,8 +217,8 @@ body.light-mode .header {
 
 .bottom_content_wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 12px;
     margin-top: 16px;
 }
 
@@ -163,7 +226,7 @@ body.light-mode .header {
     background-color: var(--background-color);
     border-radius: 12px;
     display: flex;
-    gap: 32px;
+    gap: 42px;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
@@ -173,6 +236,7 @@ body.light-mode .header {
 
 body.light-mode .extension_card {
     background-color: var(--neutral-0);
+    border: 1px solid var(--neutral-200)
 }
 
 .extension_card_top_content {
@@ -180,7 +244,6 @@ body.light-mode .extension_card {
     gap: 16px;
     flex-direction: row;
     justify-content: space-between;
-    align-items: top;
     width: 100%;
 }
 
@@ -204,6 +267,17 @@ body.light-mode .extension_card {
     background-color: var(--red-400);
     border: 1px solid var(--red-400);
     color: var(--neutral-800);
+}
+
+body.light-mode .remove {
+    border: 1px solid var(--neutral-300);
+    color: var(--neutral-800);
+}
+
+body.light-mode .remove:hover {
+    background-color: var(--red-400);
+    border: 1px solid var(--red-400);
+    color: var(--neutral-0);
 }
 
 .extension_card_text_content {
@@ -256,6 +330,10 @@ body.light-mode .extension_card {
     border-radius: 32px;
 }
 
+body.light-mode .slider {
+    background-color: var(--neutral-300);
+}
+
 .disk {
     position: absolute;
     height: 18px;
@@ -269,4 +347,39 @@ body.light-mode .extension_card {
 
 .switch input:checked+.slider .disk {
     transform: translateX(20px);
+}
+
+@media screen and (max-width: 600px) {
+    .main_container {
+        padding-top: 24px;
+        padding-bottom: 24px;
+        padding-left: 24px;
+        padding-right: 24px;
+        gap: 32px;
+    }
+
+    .main_content_wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    .top_content_wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .bottom_content_wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .extension_card {
+        padding: 16px;
+    }
+
 }

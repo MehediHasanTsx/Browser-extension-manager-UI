@@ -64,6 +64,16 @@ function rmvConsolePlus() {
     document.getElementById("ConsolePlus").style.display = "none";
 }
 
+// Show all extensions
+document.getElementById("showAll").addEventListener("click", () => {
+    document.querySelectorAll(".extension_card").forEach(card => {
+        // never show removed cards
+        if (card.dataset.removed === "true") {
+            return;
+        }
+        card.style.display = "flex";
+    });
+});
 
 // Active status toggle functions
 document.getElementById("showActive").addEventListener("click", () => {
@@ -97,17 +107,6 @@ document.getElementById("showInactive").addEventListener("click", () => {
         } else {
             card.style.display = "none";
         }
-    });
-});
-
-// Show all extensions
-document.getElementById("showAll").addEventListener("click", () => {
-    document.querySelectorAll(".extension_card").forEach(card => {
-        // never show removed cards
-        if (card.dataset.removed === "true") {
-            return;
-        }
-        card.style.display = "flex";
     });
 });
 
