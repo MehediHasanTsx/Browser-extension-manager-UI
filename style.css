@@ -30,8 +30,8 @@
 }
 
 body.dark-mode {
-    background: var(--dark-bg-gradient);
-    --text-color: var(--neutral-900);
+    background: var(--dark-bg-gradient) no-repeat center center fixed;
+    --text-color: var(--neutral-900); 
 }
 
 
@@ -39,7 +39,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Noto Sans', sans-serif;
-    background: var(--dark-bg-gradient);
+    background: var(--dark-bg-gradient) no-repeat center center fixed;
     color: var(--text-color);
 }
 
@@ -140,7 +140,7 @@ p {
 
 .bottom_content_wrapper {
     display: grid;
-    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 24px;
     margin-top: 16px;
 }

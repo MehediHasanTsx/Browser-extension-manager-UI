@@ -49,7 +49,8 @@
         </div>
       </div>
       <div class="bottom_content_wrapper">
-        <div class="extension_card">
+
+        <div class="extension_card" id="DevLens">
           <div class="extension_card_top_content">
             <div class="extension_card_icon">
               <img src="./assets/images/logo-devlens.svg" alt="DevLens Logo">
@@ -61,7 +62,7 @@
           </div>
           <div class="extension_card_bottom_content">
             <div class="extension_card_remove">
-              <button class="remove">Remove</button>
+              <button class="remove" onclick="rmvDevLens()">Remove</button>
             </div>
             <div class="extension_card_radio_button">
               <label class="switch">
@@ -74,7 +75,7 @@
           </div>
         </div>
 
-        <div class="extension_card">
+        <div class="extension_card" id="StyleSpy">
           <div class="extension_card_top_content">
             <div class="extension_card_icon">
               <img src="./assets/images/logo-style-spy.svg" alt="StyleSpy Logo">
@@ -86,7 +87,7 @@
           </div>
           <div class="extension_card_bottom_content">
             <div class="extension_card_remove">
-              <button class="remove">Remove</button>
+              <button class="remove" onclick="rmvStyleSpy()">Remove</button>
             </div>
             <div class="extension_card_radio_button">
               <label class="switch">
@@ -99,7 +100,7 @@
           </div>
         </div>
 
-        <div class="extension_card">
+        <div class="extension_card" id="SpeedBoost">
           <div class="extension_card_top_content">
             <div class="extension_card_icon">
               <img src="./assets/images/logo-speed-boost.svg" alt="SpeedBoost Logo">
@@ -111,7 +112,7 @@
           </div>
           <div class="extension_card_bottom_content">
             <div class="extension_card_remove">
-              <button class="remove">Remove</button>
+              <button class="remove" onclick="rmvSpeedBoost()">Remove</button>
             </div>
             <div class="extension_card_radio_button">
               <label class="switch">
@@ -124,7 +125,7 @@
           </div>
         </div>
 
-        <div class="extension_card">
+        <div class="extension_card" id="JSONWizard">
           <div class="extension_card_top_content">
             <div class="extension_card_icon">
               <img src="./assets/images/logo-json-wizard.svg" alt="JSONWizard Logo">
@@ -136,7 +137,7 @@
           </div>
           <div class="extension_card_bottom_content">
             <div class="extension_card_remove">
-              <button class="remove">Remove</button>
+              <button class="remove" onclick="rmvJSONWizard()">Remove</button>
             </div>
             <div class="extension_card_radio_button">
               <label class="switch">
@@ -149,7 +150,7 @@
           </div>
         </div>
 
-        <div class="extension_card">
+        <div class="extension_card" id="TabMasterPro">
           <div class="extension_card_top_content">
             <div class="extension_card_icon">
               <img src="./assets/images/logo-tab-master-pro.svg" alt="TabMaster Pro Logo">
@@ -161,7 +162,7 @@
           </div>
           <div class="extension_card_bottom_content">
             <div class="extension_card_remove">
-              <button class="remove">Remove</button>
+              <button class="remove" onclick="rmvTabMasterPro()">Remove</button>
             </div>
             <div class="extension_card_radio_button">
               <label class="switch">
@@ -174,7 +175,7 @@
           </div>
         </div>
 
-        <div class="extension_card">
+        <div class="extension_card" id="ViewportBuddy">
           <div class="extension_card_top_content">
             <div class="extension_card_icon">
               <img src="./assets/images/logo-viewport-buddy.svg" alt="ViewportBuddy Logo">
@@ -186,7 +187,7 @@
           </div>
           <div class="extension_card_bottom_content">
             <div class="extension_card_remove">
-              <button class="remove">Remove</button>
+              <button class="remove" onclick="rmvViewportBuddy()">Remove</button>
             </div>
             <div class="extension_card_radio_button">
               <label class="switch">
@@ -199,7 +200,7 @@
           </div>
         </div>
 
-        <div class="extension_card">
+        <div class="extension_card" id="MarkupNotes">
           <div class="extension_card_top_content">
             <div class="extension_card_icon">
               <img src="./assets/images/logo-markup-notes.svg" alt="Markup Notes Logo">
@@ -211,7 +212,7 @@
           </div>
           <div class="extension_card_bottom_content">
             <div class="extension_card_remove">
-              <button class="remove">Remove</button>
+              <button class="remove" onclick="rmvMarkupNotes()">Remove</button>
             </div>
             <div class="extension_card_radio_button">
               <label class="switch">
@@ -224,7 +225,7 @@
           </div>
         </div>
 
-        <div class="extension_card">
+        <div class="extension_card" id="GridGuides">
           <div class="extension_card_top_content">
             <div class="extension_card_icon">
               <img src="./assets/images/logo-grid-guides.svg" alt="GridGuides Logo">
@@ -236,7 +237,7 @@
           </div>
           <div class="extension_card_bottom_content">
             <div class="extension_card_remove">
-              <button class="remove">Remove</button>
+              <button class="remove" onclick="rmvGridGuides()">Remove</button>
             </div>
             <div class="extension_card_radio_button">
               <label class="switch">
@@ -249,7 +250,7 @@
           </div>
         </div>
 
-        <div class="extension_card">
+        <div class="extension_card" id="PalettePicker">
           <div class="extension_card_top_content">
             <div class="extension_card_icon">
               <img src="./assets/images/logo-palette-picker.svg" alt="Palette Picker Logo">
@@ -261,7 +262,7 @@
           </div>
           <div class="extension_card_bottom_content">
             <div class="extension_card_remove">
-              <button class="remove">Remove</button>
+              <button class="remove" onclick="rmvPalettePicker()">Remove</button>
             </div>
             <div class="extension_card_radio_button">
               <label class="switch">
@@ -274,7 +275,7 @@
           </div>
         </div>
 
-        <div class="extension_card">
+        <div class="extension_card" id="LinkChecker">
           <div class="extension_card_top_content">
             <div class="extension_card_icon">
               <img src="./assets/images/logo-link-checker.svg" alt="LinkChecker Logo">
@@ -286,7 +287,7 @@
           </div>
           <div class="extension_card_bottom_content">
             <div class="extension_card_remove">
-              <button class="remove">Remove</button>
+              <button class="remove" onclick="rmvLinkChecker()">Remove</button>
             </div>
             <div class="extension_card_radio_button">
               <label class="switch">
@@ -299,7 +300,7 @@
           </div>
         </div>
 
-        <div class="extension_card">
+        <div class="extension_card" id="DOMSnapshot">
           <div class="extension_card_top_content">
             <div class="extension_card_icon">
               <img src="./assets/images/logo-dom-snapshot.svg" alt="DOM Snapshot Logo">
@@ -311,7 +312,7 @@
           </div>
           <div class="extension_card_bottom_content">
             <div class="extension_card_remove">
-              <button class="remove">Remove</button>
+              <button class="remove" onclick="rmvDOMSnapshot()">Remove</button>
             </div>
             <div class="extension_card_radio_button">
               <label class="switch">
@@ -324,7 +325,7 @@
           </div>
         </div>
 
-        <div class="extension_card">
+        <div class="extension_card" id="ConsolePlus">
           <div class="extension_card_top_content">
             <div class="extension_card_icon">
               <img src="./assets/images/logo-console-plus.svg" alt="ConsolePlus Logo">
@@ -336,7 +337,7 @@
           </div>
           <div class="extension_card_bottom_content">
             <div class="extension_card_remove">
-              <button class="remove">Remove</button>
+              <button class="remove" onclick="rmvConsolePlus()">Remove</button>
             </div>
             <div class="extension_card_radio_button">
               <label class="switch">
