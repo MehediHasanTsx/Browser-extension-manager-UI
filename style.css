@@ -31,7 +31,7 @@
 
 body.dark-mode {
     background: var(--dark-bg-gradient) no-repeat center center fixed;
-    --text-color: var(--neutral-900); 
+    --text-color: var(--neutral-900);
 }
 
 
@@ -201,7 +201,6 @@ p {
     align-items: center;
     width: 100%;
 }
-
 
 .extension_card_radio_button {
     display: flex;
